@@ -16,7 +16,6 @@ export class DropDownDivComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.height);
   }
 
 

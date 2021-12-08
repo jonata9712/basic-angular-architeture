@@ -21,13 +21,13 @@ export class InterceptorService implements HttpInterceptor {
   constructor(private router: Router, private toastr: ToastrService, private authService: AuthenticationService) { }
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
 
-    if (localStorage.getItem('authorization') != null) {
+    if (localStorage.getItem('authentication') != null) {
       if (!this.authService.isAuthenticated()){
         this.router.navigate(['/login'])
       }
       req = req.clone({
         setHeaders: {
-          'authorization': localStorage.getItem('authorization') as string,
+          'authentication': localStorage.getItem('authentication') as string,
           'Content-Type': 'application/json'
         }
       });

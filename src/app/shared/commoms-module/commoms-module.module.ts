@@ -13,6 +13,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatTableModule } from '@angular/material/table';
 import { DropDownDivComponent } from '../fragments/drop-down-div/drop-down-div.component';
 import { NgxMaskModule } from 'ngx-mask';
+import { InterceptorModule } from '../Interceptor/interceptor.module';
 
 
 
@@ -35,7 +36,8 @@ import { NgxMaskModule } from 'ngx-mask';
     HttpClientModule,
     MatTableModule,
     NgxMaskModule.forRoot(),
-    FormsModule
+    FormsModule,
+    InterceptorModule
   ],
   providers:[
     HttpClient
