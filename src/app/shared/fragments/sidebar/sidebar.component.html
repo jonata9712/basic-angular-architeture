@@ -1,0 +1,24 @@
+<div class="sidebar bg-dark text-light"
+  [ngClass]="{'sidebar-show': exibir || fixed, 'sidebar-hide': !exibir, 'sidebar-left':isFloat('left'), 'sidebar-right':isFloat('right')}">
+  <div (click)="change()" *ngIf="!fixed">
+    <button class="btn btn-primary " style="cursor: pointer;">
+      <span class="material-icons">
+        menu_open
+      </span>
+
+    </button>
+  </div>
+  <div class="navbar navbar-dark bg-dark" *ngIf="exibir" style="height: 15vh;">
+
+    <!-- <a class="navbar-brand" class="d-block" href="#" style="text-decoration: none;"> -->
+      <img src="/assets/img/logonavbar1.png" width="150" alt="">
+      <h1 class="text-light">Bernhoeft | Meetings</h1>
+
+    <!-- </a> -->
+
+  </div>
+
+  <div [class.sidebar-content-hide]="!exibir && !fixed" class="sidebar-content mt-2">
+    <ng-content></ng-content>
+  </div>
+</div>

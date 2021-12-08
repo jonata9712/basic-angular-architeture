@@ -1,0 +1,10 @@
+npm i ngx-toastr --save
+npm i @angular/animations --save
+ng add @angular/material
+npm i xlsx
+npm i file-saver
+npm i --save-dev @types/xlsx
+npm i --save-dev @types/file-saver
+npm i @ng-bootstrap/ng-bootstrap
+npm i moment
+npm i @auth0/angular-jwt

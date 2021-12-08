@@ -1,0 +1,117 @@
+.sidebar {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.5s;
+    z-index: 3;
+}
+
+.sidebar-left {
+    position: fixed;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+}
+
+.sidebar-right {
+    padding-right: 10px;
+    padding-left: 10px;
+    position: fixed;
+    right: 0;
+    float: right;
+}
+
+.sidebar-hide {
+    width: 0;
+}
+
+.sidebar-show {
+    width: 200px;
+}
+
+@media screen and (max-width: 720px) {
+    .sidebar-show {
+        width: 100vw;
+    }
+}
+
+.sidebar-content-hide {
+    display: none;
+}
+
+.sidebar-content::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+.sidebar-content::-webkit-scrollbar-track {
+    background: gray;
+    /* color of the tracking area */
+}
+
+.sidebar-content::-webkit-scrollbar-thumb {
+    background-color: gainsboro;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    /* border: 3px solid orange; */
+    /* creates padding around scroll thumb */
+}
+
+.sidebar-content {
+    height: 75vh;
+    overflow: auto;
+}
+
+.botao-exibir-left {
+    float: right;
+    position: relative;
+}
+
+.botao-exibir-right {
+    float: right;
+    width: 10px;
+    position: relative;
+}
+
+.botao-exibir-hover-left:hover {
+    left: 40px;
+    position: relative;
+}
+
+.botao-exibir-hover-left {
+    height: 100vh;
+    cursor: pointer;
+}
+
+.botao-exibir-hover-right:hover {
+    left: -5px;
+    position: relative;
+}
+
+.botao-exibir-hover-right {
+    margin-right: -10px;
+    height: 100vh;
+    cursor: pointer;
+}
+
+.botao:hover {
+    opacity: 1;
+}
+
+.botao {
+    width: 40px;
+    opacity: 0.5;
+    transition: 0.3s opacity;
+}
+
+.botao-right {
+    margin-left: -20px;
+}
+
+.botao-left {
+    margin-left: 20px;
+}

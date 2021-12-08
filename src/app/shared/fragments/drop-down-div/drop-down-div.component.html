@@ -1,0 +1,14 @@
+<div [ngStyle]="{'width':width}" id="drop" style="border: 1px solid aqua;">
+  <div style="height: 30px;  cursor: pointer;" class="bg-dark text-light" [ngStyle]="{'display': showDropDown ? 'block' : 'none'}" (click)="display = !display">
+    <span class="material-icons d-flex justify-content-end" style="font-size: 30px;" *ngIf="display">
+      expand_less
+    </span>
+    <span class="material-icons d-flex justify-content-end" style="font-size: 30px;" *ngIf="!display">
+      expand_more
+    </span>
+  </div>
+  <div  [ngStyle]="{'height': display ? height : '0px'} || {'height': display && !showDropDown ? '0px' : height}">
+    <ng-content *ngIf="display || !showDropDown"></ng-content>
+  </div>
+
+</div>

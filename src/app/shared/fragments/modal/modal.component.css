@@ -1,0 +1,4 @@
+::ng-deep .myCustomModalClass .modal-dialog {
+    width: 90vw;
+    max-width: 90vw;
+}
