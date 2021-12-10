@@ -8,3 +8,17 @@ npm i --save-dev @types/file-saver
 npm i @ng-bootstrap/ng-bootstrap
 npm i moment
 npm i @auth0/angular-jwt
+npm i bootstrap@4
+npm i primeicons --save
+npm i ngx-mat-select-search
+npm i --save ngx-mask
+
+"styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/ngx-toastr/toastr.css",
+              "./node_modules/primeng/resources/primeng.min.css",
+              "./node_modules/primeng/resources/themes/omega/theme.css",
+              "./node_modules/primeicons/primeicons.css"
+            ],
